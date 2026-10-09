@@ -31,8 +31,9 @@ export function DnCoverage() {
           </div>
         </Reveal>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-[52%] p-6 lg:p-8">
-        <DnImage asset={DN_ASSETS.map} dark className="w-full h-[260px] lg:h-full rounded-xl" />
+      <div data-testid="dn-coverage-map" className="relative lg:absolute lg:inset-y-0 lg:right-0 lg:w-[62%]">
+        <DnImage asset={DN_ASSETS.map} dark className="w-full h-[240px] sm:h-[320px] lg:h-full" imgClass="object-[35%_center]" />
+        <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,#13284D_0%,rgba(19,40,77,0)_25%)] lg:bg-[linear-gradient(90deg,#13284D_0%,rgba(19,40,77,0.6)_18%,rgba(19,40,77,0)_42%)]" />
       </div>
     </section>
   );

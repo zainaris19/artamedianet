@@ -7,3 +7,4 @@ Backlog: production deploy when user is ready.
 Backlog: brochure PDF, verified testimonial + photo, Business/Custom tab pricing (if verified), footer "Broadband Internet" link to new page.
 - 2026-06: Added Dedicated Network page (/services/dedicated-network) from user reference; Services dropdown entry; EN/ID in src/dedicatedContent.js; asset map in components/dedicated/assets.js (DN-MAP, DN-NOC slots empty awaiting user upload batch 2). Quote CTAs preset "Dedicated Internet".
 Backlog: fill DN-MAP + DN-NOC when uploaded; Metro Ethernet, Dark Fiber, DWDM, Backup on Demand pages.
+- 2026-06: Dedicated page batch 2: DN-MAP (map.png) and DN-NOC (noc.png) filled; hero replaced with HD Artamedia tower (1175x682).

@@ -45,7 +45,8 @@ export function DnStart() {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-[56%]">
         <DnImage
           asset={DN_ASSETS.noc}
-          className="h-[260px] lg:h-full lg:[clip-path:polygon(9%_0,100%_0,100%_100%,0_100%)] lg:rounded-tl-[18px] overflow-hidden"
+          className={`h-[220px] sm:h-[300px] lg:h-full overflow-hidden ${DN_ASSETS.noc.src ? "" : "lg:[clip-path:polygon(9%_0,100%_0,100%_100%,0_100%)] lg:rounded-tl-[18px]"}`}
+          imgClass="object-left"
         />
       </div>
       <div className={`${WRAP} relative py-16 lg:py-20 lg:min-h-[400px] flex items-center`}>

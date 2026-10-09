@@ -3,9 +3,9 @@ export const DN_ASSETS = {
   hero: { id: "DN-HERO", src: "/dedicated/hero.png", alt: "City skyline with the Artamedia building at twilight" },
   overview: { id: "DN-OVERVIEW", src: "/dedicated/technician.png", alt: "Artamedia technician wiring a server rack" },
   solutions: { id: "DN-SOLUTIONS", src: "/dedicated/solutions.webp" },
-  map: { id: "DN-MAP", src: null, label: "Indonesia network map" },
+  map: { id: "DN-MAP", src: "/dedicated/map.png", alt: "Artamedia network map across Indonesia", label: "Indonesia network map" },
   industries: { id: "DN-INDUSTRIES", src: "/dedicated/meeting.png", alt: "Executives meeting in front of a city skyline" },
-  noc: { id: "DN-NOC", src: null, label: "Artamedia NOC" },
+  noc: { id: "DN-NOC", src: "/dedicated/noc.png", alt: "Artamedia Network Operations Centre", label: "Artamedia NOC" },
 };
 
 // Photo regions inside the user's composite solution-cards image (2000x667).
