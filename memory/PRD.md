@@ -14,3 +14,4 @@ Backlog: fill DN-MAP + DN-NOC when uploaded; Metro Ethernet, Dark Fiber, DWDM, B
 - 2026-06: Dark Fiber batch 2 filled DF-MAP, DF-PANEL, DF-CTA (Artamedia tower skyline).
 - 2026-06: Home Our Services cards now link to service pages (Dedicated, Metro, Dark Fiber, Broadband); DWDM & Backup on Demand still open contact form (no pages yet).
 - 2026-06: Home hero now auto slider (5 user images /public/hero/slide-1..5.webp, 6.5s, unique transition per slide, Ken Burns, progress dots, pauses on hidden tab) in components/HeroSlider.jsx.
+- 2026-06: Hero changed per user: images shown at native ratio (aspect 2000/646, no crop), no zoom/parallax, simple fade every 6s; text overlays image at >=1536px, stacked below image on smaller screens; feature bar below image.

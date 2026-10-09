@@ -1,22 +1,14 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const DURATION = 6500;
+const DURATION = 6000;
 
 export const HERO_SLIDES = [
-  { src: "/hero/slide-1.webp", alt: "Coastal city skyline at sunset with expressway", pos: "object-[68%_center] lg:object-center" },
-  { src: "/hero/slide-2.webp", alt: "Telecom tower overlooking a harbour city at sunset", pos: "object-[86%_center] lg:object-[60%_center]" },
-  { src: "/hero/slide-3.webp", alt: "Artamedia crew laying fiber cable in a mountain village", pos: "object-[74%_center] lg:object-[60%_center]" },
-  { src: "/hero/slide-4.webp", alt: "Submarine cable landing operation at sunset", pos: "object-[40%_center] lg:object-center" },
-  { src: "/hero/slide-5.webp", alt: "Fiber-connected data center aisle", pos: "object-[62%_center] lg:object-center" },
-];
-
-const ENTER = [
-  { initial: { opacity: 0, scale: 1.15, filter: "blur(10px)" }, animate: { opacity: 1, scale: 1, filter: "blur(0px)" } },
-  { initial: { clipPath: "inset(0% 0% 0% 100%)" }, animate: { clipPath: "inset(0% 0% 0% 0%)" } },
-  { initial: { opacity: 0, scale: 1.22, x: "4%" }, animate: { opacity: 1, scale: 1, x: "0%" } },
-  { initial: { clipPath: "circle(0% at 78% 50%)" }, animate: { clipPath: "circle(150% at 78% 50%)" } },
-  { initial: { opacity: 0, y: "5%", scale: 1.1 }, animate: { opacity: 1, y: "0%", scale: 1 } },
+  { src: "/hero/slide-1.webp", alt: "Coastal city skyline at sunset with expressway" },
+  { src: "/hero/slide-2.webp", alt: "Telecom tower overlooking a harbour city at sunset" },
+  { src: "/hero/slide-3.webp", alt: "Artamedia crew laying fiber cable in a mountain village" },
+  { src: "/hero/slide-4.webp", alt: "Submarine cable landing operation at sunset" },
+  { src: "/hero/slide-5.webp", alt: "Fiber-connected data center aisle" },
 ];
 
 export function useHeroSlider(count) {
@@ -47,26 +39,19 @@ export function useHeroSlider(count) {
 
 export function HeroSlides({ index }) {
   const slide = HERO_SLIDES[index];
-  const fx = ENTER[index % ENTER.length];
   return (
     <AnimatePresence initial={false}>
-      <motion.div
+      <motion.img
         key={index}
         data-testid={`hero-slide-${index}`}
-        className="absolute inset-0"
-        initial={{ ...fx.initial, zIndex: 2 }}
-        animate={{ ...fx.animate, zIndex: 2, transition: { duration: 1.4, ease: [0.65, 0, 0.35, 1] } }}
-        exit={{ opacity: 0, zIndex: 1, transition: { duration: 0.6, delay: 1.2 } }}
-      >
-        <motion.img
-          src={slide.src}
-          alt={slide.alt}
-          className={`w-full h-full object-cover ${slide.pos}`}
-          initial={{ scale: 1 }}
-          animate={{ scale: 1.08 }}
-          transition={{ duration: DURATION / 1000 + 2, ease: "linear" }}
-        />
-      </motion.div>
+        src={slide.src}
+        alt={slide.alt}
+        className="absolute inset-0 w-full h-full object-cover"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.1, ease: "easeInOut" }}
+      />
     </AnimatePresence>
   );
 }
