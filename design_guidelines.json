@@ -1,0 +1,355 @@
+{
+  "project_name": "PT Artamedia Citra Telematika Indonesia - Corporate ISP Home Landing Page",
+  "app_type": "marketing_site",
+  "brand_identity": {
+    "company_name": "PT Artamedia Citra Telematika Indonesia",
+    "short_name": "Artamedia",
+    "tagline": "Get Connected. Always Connected.",
+    "hero_headline": {
+      "line1": "Trusted Network.",
+      "line2": "Trusted Business."
+    },
+    "hero_subheadline_en": "End-to-end telecommunication infrastructure, dedicated fiber optics, high-capacity DWDM, and 24/7 proactive NOC engineered for enterprises across Indonesia and Southeast Asia.",
+    "hero_subheadline_id": "Infrastruktur telekomunikasi menyeluruh, fiber optik berdedikasi tinggi, DWDM berkapasitas besar, dan NOC 24/7 proaktif dirancang khusus untuk pertumbuhan bisnis enterprise Indonesia dan Asia Tenggara.",
+    "logo_spec": {
+      "description": "Artamedia dynamic emblem: stylized geometric 'A' chevron arcs with corporate blue (#0033A0), vibrant green (#00A651), accent crimson red (#EE1C25), and central golden yellow bridge (#FFD500), paired with navy bold wordmark 'artamedia' and green italicized tagline 'Get Connected. Always Connected.'",
+      "svg_provided": true,
+      "usage_areas": [
+        "sticky_header_desktop_and_mobile",
+        "hero_billboard_badge",
+        "about_section_corporate_watermark",
+        "noc_screen_system_branding",
+        "why_artamedia_crest",
+        "footer_brand_column"
+      ]
+    }
+  },
+  "color_system": {
+    "archetype": "THE PERFORMANCE PRO & CORPORATE TELCO LUXE",
+    "brand_colors": {
+      "corporate_navy_dark": "#060B18",
+      "corporate_navy_deep": "#0A1329",
+      "corporate_navy_surface": "#0F1E3D",
+      "corporate_navy_card": "#132448",
+      "corporate_blue": "#0033A0",
+      "brand_green_primary": "#00A651",
+      "brand_green_glow": "#10B981",
+      "brand_green_accent": "#059669",
+      "brand_red_accent": "#EE1C25",
+      "brand_yellow_accent": "#FFD500",
+      "text_dark_primary": "#FFFFFF",
+      "text_dark_secondary": "#94A3B8",
+      "text_dark_muted": "#64748B",
+      "light_section_bg": "#F8FAFC",
+      "light_section_surface": "#FFFFFF",
+      "light_section_border": "#E2E8F0",
+      "light_section_text_primary": "#0F172A",
+      "light_section_text_secondary": "#475569"
+    },
+    "contrast_strategy": "Alternating cinematic rhythm: Dark Hero (#060B18) -> Stats Bar (Dark Navy Glass) -> Light About Section (#F8FAFC) -> Dark Navy Services (01-06 grid) -> Dark Network Map Section -> Dark NOC Monitoring Terminal -> Light Industries Section (6-card photo grid) -> Dark Business Continuity Diagram -> Light Why Artamedia Section -> Light/Clean Insights Section -> Emerald/Forest Vibrant CTA with aerial road -> Deep Navy Footer."
+  },
+  "typography": {
+    "font_pairings": {
+      "display_headings": "Outfit, 'Cabinet Grotesk', system-ui, sans-serif",
+      "body_text": "'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif",
+      "mono_data": "'IBM Plex Mono', monospace"
+    },
+    "font_rules": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-bold",
+      "eyebrow_badge": "text-xs font-semibold tracking-[0.2em] uppercase",
+      "body_regular": "text-base leading-relaxed text-slate-300",
+      "body_light_section": "text-base leading-relaxed text-slate-600"
+    }
+  },
+  "selected_images": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1758919917007-100ed47d1e4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbmlnaHQlMjBza3lsaW5lJTIwaGlnaHdheXxlbnwwfHx8fDE3OTEyMDYwNzF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Vibrant metropolitan night skyline with glowing highway light trails representing high-speed fiber data flow",
+      "placement": "Hero Section background with bg-black/40 to navy dark gradient overlay"
+    },
+    "about_engineer": {
+      "url": "https://images.unsplash.com/photo-1763128516808-785e80c1dd68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwyfHxuZXR3b3JrJTIwZW5naW5lZXIlMjBkYXRhY2VudGVyfGVufDB8fHx8MTc5MTIwNjA3MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Certified network engineer monitoring enterprise multi-screen terminal in NOC facility",
+      "placement": "About Section left-side high fidelity portrait badge with real-time uptime tag"
+    },
+    "cta_aerial_road": {
+      "url": "https://images.unsplash.com/photo-1620998258282-bc3bd5fee9e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBhZXJpYWwlMjByb2FkJTIwZm9yZXN0fGVufDB8fHx8MTc5MTIwNjA3MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Winding modern highway carved through dense green forest - symbol of continuous connection and boundless reach",
+      "placement": "Get Connected CTA section hero backing with emerald green high-contrast overlay"
+    },
+    "industries": [
+      {
+        "name_en": "Hospitality",
+        "name_id": "Perhotelan & Pariwisata",
+        "desc_en": "High-density guest Wi-Fi and uninterrupted PMS cloud sync for 5-star resorts.",
+        "desc_id": "Wi-Fi densitas tinggi dan sinkronisasi cloud sistem PMS tanpa jeda untuk hotel berbintang.",
+        "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?crop=entropy&cs=srgb&fm=jpg&q=80&w=800"
+      },
+      {
+        "name_en": "Enterprise & Corporate",
+        "name_id": "Perusahaan & Korporasi",
+        "desc_en": "Mission-critical symmetric bandwidth with 99.9% SLA guaranteed uptime.",
+        "desc_id": "Bandwidth simetris misi-kritis dengan jaminan ketersediaan layanan 99,9% SLA.",
+        "image_url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=srgb&fm=jpg&q=80&w=800"
+      },
+      {
+        "name_en": "Government & Public Sector",
+        "name_id": "Pemerintahan & Sektor Publik",
+        "desc_en": "Secure isolated dark fiber connectivity for regional and national civic networks.",
+        "desc_id": "Konektivitas serat optik terisolasi aman untuk jaringan publik tingkat daerah dan nasional.",
+        "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?crop=entropy&cs=srgb&fm=jpg&q=80&w=800"
+      },
+      {
+        "name_en": "Education & Campus",
+        "name_id": "Pendidikan & Kampus",
+        "desc_en": "Ultra low-latency gigabit backbone bridging research centers and university faculties.",
+        "desc_id": "Backbone gigabit latensi ultra-rendah penghubung pusat riset dan gedung fakultas kampus.",
+        "image_url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=srgb&fm=jpg&q=80&w=800"
+      },
+      {
+        "name_en": "Financial Services & Banking",
+        "name_id": "Layanan Finansial & Perbankan",
+        "desc_en": "Encrypted low-jitter point-to-point data links for high-frequency trading & core banking.",
+        "desc_id": "Jalur data point-to-point terenkripsi rendah jitter untuk transaksi finansial & core banking.",
+        "image_url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?crop=entropy&cs=srgb&fm=jpg&q=80&w=800"
+      },
+      {
+        "name_en": "Data Center & ISP Carriers",
+        "name_id": "Data Center & Provider ISP",
+        "desc_en": "Direct peering to Indonesian Internet Exchange (IIX) & OpenIXP with tier-1 multi-homing.",
+        "desc_id": "Koneksi langsung ke IIX & OpenIXP dengan interkoneksi tier-1 berkapasitas multigigabit.",
+        "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=srgb&fm=jpg&q=80&w=800"
+      }
+    ]
+  },
+  "sections_breakdown": [
+    {
+      "id": "header",
+      "type": "sticky_navigation",
+      "elements": [
+        "Artamedia full logo (symbol + wordmark + tagline)",
+        "Desktop Links: Home, Company (Dropdown: About Us, Management, Coverage), Services (01 Dedicated, 02 Metro-E, 03 Dark Fiber, 04 DWDM, 05 Broadband, 06 Backup), Network, NOC, Industries, Contact",
+        "Language Toggle: EN | ID with active indicator and instant localization switch",
+        "Primary CTA: 'Hubungi Sales' / 'Contact Sales' button with green glow accent",
+        "data-testid attributes on all interactive triggers"
+      ]
+    },
+    {
+      "id": "hero",
+      "type": "dark_cinematic_hero",
+      "headline_line1": "Trusted Network.",
+      "headline_line2": "Trusted Business.",
+      "headline_styling": "Trusted Network in pure white (#FFFFFF), Trusted Business in vivid brand green (#00A651)",
+      "badge": "PT ARTAMEDIA CITRA TELEMATIKA INDONESIA",
+      "cta_primary": "Eksplorasi Layanan / Explore Solutions",
+      "cta_secondary": "Konsultasi Jaringan / Network Consultation",
+      "stats_ribbon": [
+        {"icon": "Activity", "value": "99.98%", "label_en": "Guaranteed SLA Uptime", "label_id": "Garansi SLA Uptime"},
+        {"icon": "Cpu", "value": "< 2ms", "label_en": "Domestic Latency", "label_id": "Latensi Domestik Rendah"},
+        {"icon": "Globe", "value": "100 Gbps+", "label_id": "Kapasitas Backbone DWDM", "label_en": "DWDM Backbone Capacity"},
+        {"icon": "ShieldCheck", "value": "24/7/365", "label_id": "NOC Terpusat & Siaga", "label_en": "Proactive NOC Support"}
+      ]
+    },
+    {
+      "id": "about",
+      "type": "light_corporate_profile",
+      "bg_color": "#F8FAFC",
+      "layout": "Two column: Left image with engineer + SLA badges + SVG tech frame; Right corporate intro + 4 feature bullets with green check circles + direct contact anchor",
+      "bullet_items": [
+        "Infrastruktur Jaringan Serat Optik End-to-End Tanpa Kompromi",
+        "Koneksi Simetris 1:1 Download & Upload Berkecepatan Tinggi",
+        "Dukungan Engineer On-Site & Monitoring NOC 24 Jam Non-Stop",
+        "Multiple Upstream Redundancy & Direct Peering IIX / OpenIXP"
+      ]
+    },
+    {
+      "id": "services",
+      "type": "dark_navy_cards_grid",
+      "bg_color": "#060B18",
+      "title": "Solusi Telekomunikasi Komprehensif / Comprehensive Telco Solutions",
+      "cards": [
+        {
+          "number": "01",
+          "title_en": "Dedicated Internet",
+          "title_id": "Dedicated Internet",
+          "desc_en": "Direct symmetrical 1:1 bandwidth with zero contention ratio and premium Tier-1 global routing.",
+          "desc_id": "Akses internet simetris 1:1 murni tanpa oversubscription untuk stabilitas operasional utama bisnis Anda.",
+          "icon": "Wifi"
+        },
+        {
+          "number": "02",
+          "title_en": "Metro Ethernet",
+          "title_id": "Metro Ethernet",
+          "desc_en": "Carrier-grade Layer 2 point-to-point and multipoint inter-branch connectivity with ultra-low latency.",
+          "desc_id": "Konektivitas privat Layer-2 antar kantor cabang dan pusat data berkecepatan tinggi dengan latensi konsisten.",
+          "icon": "Network"
+        },
+        {
+          "number": "03",
+          "title_en": "Dark Fiber",
+          "title_id": "Dark Fiber",
+          "desc_en": "Unlit dedicated physical optical fiber strands offering unlimited bandwidth scalability and supreme data sovereignty.",
+          "desc_id": "Infrastruktur serat optik privat berkapasitas tak terbatas dengan kendali protokol mandiri penuh.",
+          "icon": "Layers"
+        },
+        {
+          "number": "04",
+          "title_en": "DWDM (Dense Wavelength Division)",
+          "title_id": "DWDM Solutions",
+          "desc_en": "High-throughput optical multiplexing transmitting multi-terabit lambdas over long-haul carrier routes.",
+          "desc_id": "Teknologi transmisi multi-panjang gelombang terenkripsi untuk kebutuhan transfer data masif antar data center.",
+          "icon": "Radio"
+        },
+        {
+          "number": "05",
+          "title_en": "Broadband Internet",
+          "title_id": "Broadband Internet",
+          "desc_en": "Cost-effective high-speed business broadband with reliable dynamic routing for SMBs and enterprise branch offices.",
+          "desc_id": "Koneksi broadband bisnis berkecepatan tinggi yang andal dan hemat biaya untuk kantor cabang modern.",
+          "icon": "Zap"
+        },
+        {
+          "number": "06",
+          "title_en": "Backup on Demand",
+          "title_id": "Backup on Demand",
+          "desc_en": "Automated failover fail-safe redundant link guaranteeing zero downtime during upstream fiber disruption.",
+          "desc_id": "Jalur cadangan otomatis yang aktif seketika saat jalur utama terganggu demi kontinuitas bisnis tanpa jeda.",
+          "icon": "ShieldAlert"
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "type": "dark_interactive_map_tabs",
+      "title": "Jaringan Backbone & Point of Presence (PoP)",
+      "subtitle": "Konektivitas regional terintegrasi dengan latensi ultra-rendah antar simpul digital Asia Tenggara.",
+      "tabs": [
+        {"id": "indonesia", "name": "Indonesia", "pops": 48, "latency": "< 2ms", "highlights": "Jakarta, Surabaya, Bandung, Bali, Medan, Batam, Balikpapan"},
+        {"id": "singapore", "name": "Singapore", "pops": 12, "latency": "< 8ms", "highlights": "Equinix SG1/SG3, Global Switch, 1-Net"},
+        {"id": "malaysia", "name": "Malaysia", "pops": 8, "latency": "< 14ms", "highlights": "Cyberjaya Data Hub, Menara AIMS, Johor Bahru"},
+        {"id": "thailand", "name": "Thailand", "pops": 6, "latency": "< 22ms", "highlights": "Bangkok TCC Tech, True IDC, Songkhla"}
+      ]
+    },
+    {
+      "id": "noc",
+      "type": "dark_monitoring_terminal",
+      "title": "24/7/365 Network Operation Center (NOC)",
+      "subtitle": "Tim engineer bersertifikasi internasional memantau setiap milidetik integritas jaringan Anda secara proaktif.",
+      "chips": [
+        {"name": "Real-time Monitoring", "desc": "SNMP & NetFlow telemetry across all core nodes"},
+        {"name": "Network Performance", "desc": "Jitter, packet loss, and latency threshold alerts"},
+        {"name": "Incident Response", "desc": "Under 15 minutes MTTA and rapid dispatch"},
+        {"name": "Network Visibility", "desc": "Customer self-service real-time bandwidth graph"}
+      ]
+    },
+    {
+      "id": "industries",
+      "type": "light_photo_grid",
+      "title": "Melayani Berbagai Sektor Industri Krusial",
+      "subtitle": "Kepercayaan ratusan enterprise nasional didukung oleh jaringan Artamedia yang tangguh.",
+      "grid_columns": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    },
+    {
+      "id": "continuity",
+      "type": "dark_business_continuity_diagram",
+      "title": "Business Continuity & Dual Redundancy Architecture",
+      "subtitle": "Arsitektur Zero Single Point of Failure (SPOF) memastikan bisnis Anda tetap online dalam kondisi ekstrem sekalipun.",
+      "diagram_flow": [
+        {"node": "Primary Network (Artamedia Direct Fiber)", "type": "main", "status": "Active 100%"},
+        {"node": "Artamedia Intelligent Core Gateway", "type": "hub", "status": "Zero-Drop Switching"},
+        {"node": "Your Business Critical Operations", "type": "target", "status": "Always Online 99.98%"},
+        {"node": "Backup Network (Redundant BGP / Wireless)", "type": "standby", "status": "Hot Standby Standalone"}
+      ]
+    },
+    {
+      "id": "why_artamedia",
+      "type": "light_reasons_stats",
+      "title": "Mengapa Memilih Artamedia Citra Telematika Indonesia?",
+      "stats": [
+        {"num": "15+", "label_id": "Tahun Pengalaman Telko", "label_en": "Years of Telco Mastery"},
+        {"num": "500+", "label_id": "Pelanggan Korporat Aktif", "label_en": "Active Enterprise Clients"},
+        {"num": "100%", "label_id": "Jalur Fiber Optik Milik Sendiri", "label_en": "Carrier-grade Fiber Asset"},
+        {"num": "<15m", "label_id": "Response Time Tiket NOC", "label_en": "Rapid NOC Response Time"}
+      ]
+    },
+    {
+      "id": "insights",
+      "type": "editorial_articles",
+      "title": "Insights & Berita Telekomunikasi",
+      "featured_article": {
+        "title": "Pentingnya Arsitektur Redundansi Multi-Homing untuk Ketahanan Sistem Finansial",
+        "date": "12 Juli 2026",
+        "category": "Network Engineering",
+        "read_time": "5 min read"
+      },
+      "secondary_articles": [
+        {
+          "title": "Mempersiapkan Bandwidth Enterprise Menyambut Ledakan AI Generatif & Cloud Edge",
+          "date": "28 Juni 2026",
+          "category": "Technology Trends"
+        },
+        {
+          "title": "Perbedaan Mendasar Dark Fiber vs DWDM: Kapan Perusahaan Anda Harus Beralih?",
+          "date": "15 Mei 2026",
+          "category": "Infrastructure Guide"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "emerald_vibrant_banner",
+      "bg_image": "aerial_road_forest",
+      "headline": "Get Connected. Always Connected.",
+      "subheadline": "Hubungi tim konsultan infrastruktur Artamedia hari ini untuk audit jaringan dan proposal solusi yang disesuaikan.",
+      "cta_button": "Konsultasi Gratis / Get In Touch"
+    },
+    {
+      "id": "contact_modal_or_drawer",
+      "type": "interactive_sales_form",
+      "fields": ["Nama Lengkap", "Nama Perusahaan", "Email Bisnis", "Nomor WhatsApp", "Kebutuhan Layanan (Select)", "Catatan Tambahan"],
+      "toast_feedback": "Sonner toast with instant confirmation"
+    },
+    {
+      "id": "footer",
+      "type": "deep_navy_corporate_footer",
+      "columns": [
+        "Brand summary with Artamedia logo & license info",
+        "Layanan (Dedicated, Metro-E, Dark Fiber, DWDM, Broadband, Backup)",
+        "Perusahaan (Tentang Kami, Jangkauan Jaringan, NOC, Karir)",
+        "Kontak & Alamat Kantor Pusat (Jakarta, Indonesia)"
+      ],
+      "copyright": "© 2026 PT Artamedia Citra Telematika Indonesia. All Rights Reserved. Get Connected. Always Connected."
+    }
+  ],
+  "accessibility_and_testing": {
+    "data_testid_convention": [
+      "header-logo",
+      "header-nav-link-{name}",
+      "header-lang-toggle",
+      "header-contact-btn",
+      "hero-title",
+      "hero-explore-btn",
+      "hero-consult-btn",
+      "service-card-{number}",
+      "network-tab-{country}",
+      "noc-chip-{id}",
+      "industry-card-{slug}",
+      "contact-form-name-input",
+      "contact-form-email-input",
+      "contact-form-submit-btn",
+      "cta-banner-btn",
+      "footer-lang-toggle"
+    ],
+    "wcag_aa_adherence": "High contrast ratio verified on dark navy (#060B18) with pure white (#FFFFFF) and emerald green (#00A651). Light sections use #0F172A on #F8FAFC."
+  },
+  "instructions_to_main_agent": [
+    "Follow this exact corporate ISP structure matching the user's mockup and Artamedia visual standards.",
+    "Implement the Artamedia dynamic logo SVG with blue/green/red arcs, yellow belt, and 'Get Connected. Always Connected.' tagline.",
+    "Support dynamic bilingual switching between Bahasa Indonesia (ID) and English (EN) using a smooth state toggle.",
+    "Ensure all interactive buttons, cards, and modal triggers have proper data-testid attributes for E2E testing.",
+    "Connect contact form submit to the local backend /api/contact or gracefully show Sonner toast response.",
+    "Do not use generic plain gray; tint neutrals toward deep corporate telco navy (#0A1329 / #060B18)."
+  ]
+}
