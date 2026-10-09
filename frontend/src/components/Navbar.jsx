@@ -150,7 +150,7 @@ export default function Navbar() {
             </button>
             <button
               data-testid="mobile-menu-btn"
-              className={`xl:hidden p-2 ${light && !mobileOpen ? "text-bb-navy" : "text-white"}`}
+              className={`xl:hidden p-2 ${light ? "text-bb-navy" : "text-white"}`}
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
@@ -167,7 +167,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-navy-950/98 backdrop-blur-2xl xl:hidden pt-28 px-6 pb-10 flex flex-col"
+            className="fixed inset-0 z-40 bg-navy-950/[0.98] backdrop-blur-2xl xl:hidden pt-28 px-6 pb-10 flex flex-col"
           >
             <div className="flex flex-col gap-1 overflow-y-auto">
               {links.map((l, i) => (
@@ -178,7 +178,7 @@ export default function Navbar() {
                   transition={{ delay: 0.05 * i, duration: 0.4 }}
                   data-testid={`mobile-nav-link-${l.key}`}
                   onClick={() => (l.action ? (setMobileOpen(false), openContact()) : go(l.hash || DROPDOWN_TARGETS[l.menu](t)[0][1]))}
-                  className="text-left font-display text-3xl font-bold text-white py-3 border-b border-white/10 hover:text-brand-green2 transition-colors"
+                  className="w-full text-left font-display text-3xl font-bold text-white py-3 border-b border-white/10 hover:text-brand-green2 transition-colors"
                 >
                   {t.nav[l.key]}
                 </motion.button>

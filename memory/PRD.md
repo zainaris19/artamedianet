@@ -3,3 +3,5 @@ Problem: Deploy and run artamedia website from https://github.com/zainaris19/art
 - 2026-06: Imported repo unchanged (React + FastAPI + MongoDB). Running on preview. Production deploy cancelled by user.
 - Endpoints: GET /api/, POST/GET /api/status, POST /api/contact
 Backlog: production deploy when user is ready.
+- 2026-06: Added Broadband Business page (/services/broadband-business) per user reference screenshot; Services dropdown in navbar; EN/ID content in src/broadbandContent.js; quote CTAs open contact modal pre-filled "Broadband Internet". User images in public/broadband/. Customer Stories uses labeled image slot + pending testimonial (awaiting verified content). Brochure button opens contact modal until PDF uploaded.
+Backlog: brochure PDF, verified testimonial + photo, Business/Custom tab pricing (if verified), footer "Broadband Internet" link to new page.
