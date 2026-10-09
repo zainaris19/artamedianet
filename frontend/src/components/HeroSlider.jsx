@@ -59,9 +59,9 @@ export function HeroSlides({ index }) {
 export function HeroSlideNav({ index, setIndex, paused }) {
   return (
     <div data-testid="hero-slider-nav" className="flex items-center gap-4">
-      <span data-testid="hero-slide-counter" className="font-display text-[13px] font-bold tracking-[0.2em] text-white tabular-nums">
+      <span data-testid="hero-slide-counter" className="font-jakarta text-[13px] font-bold tracking-[0.2em] text-bb-navy tabular-nums">
         {String(index + 1).padStart(2, "0")}
-        <span className="text-white/45"> / {String(HERO_SLIDES.length).padStart(2, "0")}</span>
+        <span className="text-slate-400"> / {String(HERO_SLIDES.length).padStart(2, "0")}</span>
       </span>
       <div className="flex items-center gap-2">
         {HERO_SLIDES.map((s, i) => (
@@ -70,12 +70,12 @@ export function HeroSlideNav({ index, setIndex, paused }) {
             data-testid={`hero-slide-dot-${i}`}
             aria-label={`Slide ${i + 1}`}
             onClick={() => setIndex(i)}
-            className={`relative h-[3px] rounded-full overflow-hidden bg-white/25 transition-[width] duration-500 ${i === index ? "w-14" : "w-7 hover:bg-white/50"}`}
+            className={`relative h-[3px] rounded-full overflow-hidden bg-slate-300 transition-[width] duration-500 ${i === index ? "w-14" : "w-7 hover:bg-slate-400"}`}
           >
             {i === index && (
               <motion.span
                 key={`${index}-${paused}`}
-                className="absolute inset-y-0 left-0 bg-brand-green2"
+                className="absolute inset-y-0 left-0 bg-bb-blue"
                 initial={{ width: "0%" }}
                 animate={{ width: paused ? "0%" : "100%" }}
                 transition={{ duration: DURATION / 1000, ease: "linear" }}

@@ -27,7 +27,7 @@ export default function Navbar() {
   const [active, setActive] = useState("home");
   const [mobileOpen, setMobileOpen] = useState(false);
   const { pathname } = useLocation();
-  const light = pathname !== "/";
+  const light = true;
 
   useEffect(() => {
     const onScroll = () => {

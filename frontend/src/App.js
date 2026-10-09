@@ -6,7 +6,6 @@ import "@/App.css";
 import { LanguageProvider, ContactProvider, useContact, scrollToSection } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Network from "@/components/Network";
@@ -51,7 +50,6 @@ function Home() {
   return (
     <main>
       <Hero />
-      <Marquee />
       <About />
       <Services />
       <Network />
