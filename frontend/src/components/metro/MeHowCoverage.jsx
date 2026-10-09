@@ -11,7 +11,7 @@ export function MeHow() {
   return (
     <section data-testid="me-how" className="bg-white py-16 lg:py-20">
       <div className={`${WRAP} grid lg:grid-cols-12 gap-10 items-center`}>
-        <Reveal className="lg:col-span-9">
+        <Reveal className="lg:col-span-9 min-w-0">
           <BbEyebrow>{h.eyebrow}</BbEyebrow>
           <h2 className="mt-4 font-extrabold tracking-[-0.02em] text-bb-navy text-[30px] lg:text-[38px] leading-[1.15]">{h.title}</h2>
           <p className="mt-3 text-[15px] leading-[1.7] text-bb-text">{h.body}</p>
