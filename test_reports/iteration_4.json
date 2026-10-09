@@ -1,0 +1,24 @@
+{
+  "summary": "Frontend testing of new Dark Fiber page (/services/dark-fiber). All 9 feature checks pass; no code changes required. Sections render in exact order: df-hero, df-highlights, df-about, df-benefits, df-coverage, df-usecases, df-specs, df-process, df-cta, df-faq, site-footer. Images load (naturalWidth>0): /darkfiber/hero.png (nw=1701), /darkfiber/about.png (nw=1537), /darkfiber/trench.png (nw=1319). df-usecase-img-0..4 use /darkfiber/usecases.webp as CSS background with per-card background-position matching USECASE_SPRITE regions. Labeled empty slots present: image-slot-df-map, image-slot-df-panel, image-slot-df-cta. Desktop Services dropdown contains All Services + 4 service entries including header-dropdown-services-servicesdarkfiber (navigates/visits the page). Contact modal pre-selects 'Dark Fiber' from df-hero-quote-btn, df-hero-team-btn, df-cta-quote-btn, df-cta-sales-btn and header-contact-btn on this route; filling + submitting (contact-form-submit-btn) shows sonner success toast ('Message sent. Our team will reach out shortly.') and closes the modal. FAQ Radix accordion df-faq-trigger-0..4 open with data-state=open; single-open behavior verified (opening trigger-2 collapses trigger-0). EN/ID toggle via lang-option-id switches hero title to 'Bangun Jaringan Anda Sendiri / Dengan Dark Fiber Dedicated'. df-breadcrumb-home navigates to /. Desktop (1920x1080) no horizontal overflow (sw=cw=1920). Mobile 390px: sw=cw=bw=390 (no overflow), mobile menu reveals mobile-nav-link-dark which navigates to /services/dark-fiber and df-hero renders. Regression visits of /, /services/broadband-business, /services/dedicated-network, /services/metro-ethernet all render <main>. No console/page errors captured.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Dropdown testid generation (`${l.menu}-${hash.replace(/[^a-z]/g, '')}`) continues to produce brittle IDs — 'header-dropdown-services-services' (All Services) collides visually with the prefix; for now unique per spec but any future path sharing letter sequences will collide. Consider slug-of-label.",
+    "Lang toggle wrapper (data-testid='header-lang-toggle') is the containing div; actual buttons are `lang-option-en`/`lang-option-id`. The review request language refers to the wrapper for scoping — clicking the wrapper itself is a no-op. Documented so future agents click the inner option buttons.",
+    "DfHero renders HeroImage twice (desktop absolute + mobile relative). Minor duplicate fetch; same nit as DnHero/MeHero.",
+    "DfCoverage/DfSpecs correctly branch rendering on `asset.src` so labeled slots show when image is intentionally absent (per spec: DF-MAP, DF-PANEL, DF-CTA unuploaded).",
+    "No `min-w-0` grid-overflow pitfall observed on DarkFiber — all internal grids/images fit at 390px without horizontal overflow."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Dark Fiber page fully verified on 1920x1080 and 390px. ContactModal uses testids contact-form-{name,email,company,phone,service-select,message,submit}-{input|select|btn} and contact-modal-close-btn. Preselect is derived from PAGE_SERVICE[pathname] in Navbar for header-contact-btn, and from the SERVICE constant ('Dark Fiber') passed by DfButton. Lang toggle: click `lang-option-id` / `lang-option-en` (not the wrapper). Lenis pattern: window.__lenis.scrollTo(el,{immediate:true}). Dropdown item testid for Dark Fiber: 'header-dropdown-services-servicesdarkfiber'. Mobile services child testid is derived from first path segment: 'mobile-nav-link-dark'. Empty image slots (DF-MAP, DF-PANEL, DF-CTA) are intentional — do not replace."
+}
