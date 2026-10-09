@@ -1,7 +1,17 @@
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Reveal } from "./Reveal";
 import { useLang, useContact } from "../context/LanguageContext";
 import { IMAGES } from "../content";
+
+const CARD_PAGES = [
+  "/services/dedicated-network",
+  "/services/metro-ethernet",
+  "/services/dark-fiber",
+  null,
+  "/services/broadband-business",
+  null,
+];
 
 const GLOWS = [
   "rgba(30, 99, 233, 0.55)",
@@ -15,6 +25,7 @@ const GLOWS = [
 export default function Services() {
   const { t } = useLang();
   const { openContact } = useContact();
+  const navigate = useNavigate();
   return (
     <section id="services" data-testid="services-section" className="bg-navy-950 py-24 lg:py-28 grain">
       <div className="relative z-10 max-w-[1320px] mx-auto px-5 lg:px-8 lg:flex lg:items-center lg:gap-10">
@@ -50,7 +61,7 @@ export default function Services() {
             <Reveal key={title} delay={i * 0.06}>
               <button
                 data-testid={`service-card-${String(i + 1).padStart(2, "0")}`}
-                onClick={openContact}
+                onClick={() => (CARD_PAGES[i] ? navigate(CARD_PAGES[i]) : openContact())}
                 style={{ "--glow": GLOWS[i] }}
                 className="service-card group relative block w-full text-left rounded-xl overflow-hidden h-[300px] xl:h-[370px] border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-white/40"
               >
