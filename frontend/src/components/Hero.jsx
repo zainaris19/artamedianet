@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ArrowDown, Cog, ShieldCheck, Globe2, Compass } from "lucide-react";
 import { useLang, useContact, scrollToSection } from "../context/LanguageContext";
-import { IMAGES } from "../content";
+import { HeroSlides, HeroSlideNav, useHeroSlider, HERO_SLIDES } from "./HeroSlider";
 
 const STATS_ICONS = [Cog, ShieldCheck, Globe2, Compass];
 
@@ -21,18 +21,16 @@ export default function Hero() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "14%"]);
   const bgScale = useTransform(scrollYProgress, [0, 1], [1.02, 1.1]);
+  const slider = useHeroSlider(HERO_SLIDES.length);
 
   return (
     <section ref={ref} id="home" data-testid="hero-section" className="relative min-h-screen flex flex-col overflow-hidden bg-navy-950 grain">
       <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0">
-        <img
-          src={IMAGES.hero}
-          alt="Artamedia skyline at blue hour with highway light trails"
-          className="w-full h-full object-cover"
-        />
+        <HeroSlides index={slider.index} />
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/35 to-transparent" />
-      <div className="absolute inset-0 bg-navy-950/45 lg:hidden" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/50 to-navy-950/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_45%,rgba(6,11,24,0.55),transparent_60%)]" />
+      <div className="absolute inset-0 bg-navy-950/50 lg:hidden" />
       <div className="absolute inset-0 bg-gradient-to-t from-navy-950/75 via-transparent to-navy-950/15" />
 
       <div className="relative z-10 max-w-[1320px] w-full mx-auto px-5 lg:px-8 flex-1 flex flex-col justify-center pt-40 pb-14">
@@ -91,6 +89,10 @@ export default function Hero() {
           >
             {t.hero.cta2}
           </button>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.9, delay: 1.2 }} className="mt-12 lg:mt-16">
+          <HeroSlideNav {...slider} />
         </motion.div>
       </div>
 

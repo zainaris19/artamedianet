@@ -13,3 +13,4 @@ Backlog: fill DN-MAP + DN-NOC when uploaded; Metro Ethernet, Dark Fiber, DWDM, B
 - 2026-06: Added Dark Fiber page (/services/dark-fiber), Services dropdown entry, EN/ID in src/darkFiberContent.js, assets in components/darkfiber/assets.js. Filled: DF-HERO, DF-ABOUT, DF-BENEFITS, use-case sprite. Empty slots: DF-MAP, DF-PANEL, DF-CTA. Tech specs (G.652D/G.657, 10G/40G/100G+) are user-provided copy pending Artamedia verification.
 - 2026-06: Dark Fiber batch 2 filled DF-MAP, DF-PANEL, DF-CTA (Artamedia tower skyline).
 - 2026-06: Home Our Services cards now link to service pages (Dedicated, Metro, Dark Fiber, Broadband); DWDM & Backup on Demand still open contact form (no pages yet).
+- 2026-06: Home hero now auto slider (5 user images /public/hero/slide-1..5.webp, 6.5s, unique transition per slide, Ken Burns, progress dots, pauses on hidden tab) in components/HeroSlider.jsx.
