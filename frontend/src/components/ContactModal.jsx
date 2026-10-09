@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, ArrowRight } from "lucide-react";
 import axios from "axios";
@@ -9,9 +9,13 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api/contact`;
 
 export default function ContactModal() {
   const { t } = useLang();
-  const { open, closeContact } = useContact();
+  const { open, closeContact, preset } = useContact();
   const [sending, setSending] = useState(false);
   const [form, setForm] = useState({ name: "", company: "", email: "", phone: "", service: "", message: "" });
+
+  useEffect(() => {
+    if (open && preset) setForm((f) => ({ ...f, service: preset }));
+  }, [open, preset]);
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 

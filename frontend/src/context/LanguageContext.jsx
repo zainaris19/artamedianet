@@ -14,9 +14,14 @@ export const useLang = () => useContext(LangContext);
 
 export function ContactProvider({ children }) {
   const [open, setOpen] = useState(false);
+  const [preset, setPreset] = useState("");
+  const openContact = (service) => {
+    setPreset(typeof service === "string" ? service : "");
+    setOpen(true);
+  };
   return (
     <ContactContext.Provider
-      value={{ open, setOpen, openContact: () => setOpen(true), closeContact: () => setOpen(false) }}
+      value={{ open, setOpen, preset, openContact, closeContact: () => setOpen(false) }}
     >
       {children}
     </ContactContext.Provider>
@@ -25,8 +30,9 @@ export function ContactProvider({ children }) {
 export const useContact = () => useContext(ContactContext);
 
 export function scrollToSection(hash) {
+  if (hash.startsWith("/")) return window.__navigate?.(hash);
   const el = document.querySelector(hash);
-  if (!el) return;
+  if (!el) return window.location.pathname !== "/" && window.__navigate?.("/" + hash);
   if (window.__lenis) window.__lenis.scrollTo(el, { offset: -72, duration: 1.2 });
   else el.scrollIntoView({ behavior: "smooth" });
 }

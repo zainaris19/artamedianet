@@ -1,9 +1,9 @@
 import { Component, useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Lenis from "lenis";
 import { Toaster } from "sonner";
 import "@/App.css";
-import { LanguageProvider, ContactProvider, useContact } from "@/context/LanguageContext";
+import { LanguageProvider, ContactProvider, useContact, scrollToSection } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
@@ -16,6 +16,7 @@ import Partners from "@/components/Partners";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
+import BroadbandBusiness from "@/pages/BroadbandBusiness";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -37,8 +38,41 @@ class ErrorBoundary extends Component {
   }
 }
 
+function Home() {
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (!hash) return;
+    const id = setTimeout(() => scrollToSection(hash), 350);
+    return () => clearTimeout(id);
+  }, [hash]);
+  return (
+    <main>
+      <Hero />
+      <Marquee />
+      <About />
+      <Services />
+      <Network />
+      <Industries />
+      <WhyArtamedia />
+      <Partners />
+      <CtaSection />
+    </main>
+  );
+}
+
 function Shell() {
   const { open } = useContact();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.__navigate = navigate;
+  }, [navigate]);
+
+  useEffect(() => {
+    window.__lenis?.scrollTo(0, { immediate: true });
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const lenis = new Lenis({ duration: 1.15, smoothWheel: true });
@@ -64,17 +98,11 @@ function Shell() {
   return (
     <div className="bg-navy-950 min-h-screen font-sans">
       <Navbar />
-      <main>
-        <Hero />
-        <Marquee />
-        <About />
-        <Services />
-        <Network />
-        <Industries />
-        <WhyArtamedia />
-        <Partners />
-        <CtaSection />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services/broadband-business" element={<BroadbandBusiness />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
       <Footer />
       <ContactModal />
       <Toaster position="top-center" richColors closeButton />

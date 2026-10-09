@@ -68,10 +68,20 @@ module.exports = {
           red: '#EE1C25',
           yellow: '#FFD500'
         },
-        ink: '#0F172A'
+        ink: '#0F172A',
+        bb: {
+          navy: '#0B1D45',
+          deep: '#0A1838',
+          blue: '#1463F3',
+          sky: '#EAF1FE',
+          mint: '#E3F7EF',
+          green: '#22C08A',
+          text: '#5B6B85'
+        }
       },
       fontFamily: {
         display: ['Outfit', 'sans-serif'],
+        jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
         sans: ['"IBM Plex Sans"', 'sans-serif'],
         mono: ['"IBM Plex Mono"', 'monospace']
       },

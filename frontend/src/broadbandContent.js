@@ -1,0 +1,232 @@
+const PACKAGES = [
+  ["HS-1", "100 Mbps", "Rp 6.000.000"],
+  ["HS-2", "200 Mbps", "Rp 9.500.000"],
+  ["HS-3", "300 Mbps", "Rp 12.500.000"],
+  ["HS-4", "500 Mbps", "Rp 17.500.000"],
+  ["HS-5", "1 Gbps", "Rp 25.000.000"],
+];
+
+export const BROADBAND = {
+  en: {
+    breadcrumb: ["Home", "Services", "Broadband Internet"],
+    hero: {
+      eyebrow: "Broadband Internet",
+      title1: "Fast, Reliable Internet",
+      title2: "for Your Business",
+      body: "Stable and high-performance broadband connectivity to keep your business, operations, and customers always connected.",
+      quote: "Get a Quote",
+      brochure: "Download Brochure",
+    },
+    highlights: [
+      ["High Speed", "Stable and consistent internet performance."],
+      ["Reliable Connectivity", "Minimized downtime for your business."],
+      ["Local & Global Access", "Seamless access to local and international resources."],
+      ["24/7 Support", "Our technical team is always ready to assist you."],
+    ],
+    about: {
+      eyebrow: "Overview",
+      title: ["Internet Solutions", "for Every Business"],
+      body: "Artamedia provides high-quality broadband internet services designed to support your daily operations, enhance productivity, and deliver a better experience for your customers. With our robust infrastructure and professional support, we ensure your business stays connected — anytime, anywhere.",
+      features: [
+        ["Stable Network", "Optimized routing and bandwidth."],
+        ["Scalable Plans", "Flexible options to match your growth."],
+        ["Secure Access", "Protected and reliable connectivity."],
+      ],
+    },
+    packages: {
+      eyebrow: "Our Packages",
+      title: "Business Internet Packages",
+      body: "Choose the right internet package for your business needs.",
+      tabs: [
+        ["hospitality", "Hospitality"],
+        ["business", "Business"],
+        ["custom", "Custom Plan"],
+      ],
+      list: PACKAGES,
+      perMonth: "/ month",
+      monthly: "Monthly Price",
+      features: ["Dedicated Internet", "Stable & Reliable", "24/7 Support"],
+      cta: "Get a Quote",
+      consult: {
+        business: {
+          title: "Business plans tailored to your operations",
+          body: "Business package pricing depends on your location, bandwidth and service requirements. Contact our sales team for a consultation and a quotation prepared for your business.",
+        },
+        custom: {
+          title: "Build a custom plan with our team",
+          body: "Need a specific bandwidth, multiple sites or a special configuration? Our team will design a plan around your requirements and prepare a tailored quotation.",
+        },
+        cta: "Request a Consultation",
+      },
+    },
+    why: {
+      eyebrow: "Why Choose Artamedia",
+      title: "More Than Just Internet",
+      body: "We deliver reliable connectivity with added value for your business.",
+      items: [
+        ["Dedicated Bandwidth", "Consistent speed without shared traffic."],
+        ["Low Latency", "Optimized routing for better performance."],
+        ["Proactive Monitoring", "Network monitored 24/7 by our NOC."],
+        ["On-Site Support", "Fast response and professional technical team."],
+      ],
+    },
+    industries: {
+      eyebrow: "Industries",
+      title: "Designed for Various Industries",
+      body: "Our broadband internet services support a wide range of business sectors.",
+      cards: [
+        ["Hospitality", "Reliable and high-speed connectivity to enhance guest experience and support seamless operations across your property."],
+        ["Retail", "Stable and secure internet for POS, inventory, and multi-branch connectivity to keep your business running smoothly."],
+        ["Office & Corporate", "High-performance connectivity to support your daily operations, collaboration, and business growth."],
+        ["Education", "Dependable internet solutions for digital learning, campus connectivity, and administrative systems."],
+        ["Healthcare", "Secure and reliable connectivity to support critical systems, patient services, and seamless hospital operations."],
+        ["Manufacturing", "Robust network solutions to support production systems, data connectivity, and operational efficiency across your facilities."],
+      ],
+    },
+    coverage: {
+      eyebrow: "Our Coverage",
+      title: "Wide Network Coverage",
+      body: "Supported by our fiber optic infrastructure, Artamedia delivers reliable broadband internet across major cities in Indonesia and key locations in Southeast Asia.",
+      stats: [
+        ["Fiber Optic", "Infrastructure"],
+        ["Major Cities", "Across Indonesia"],
+        ["Southeast Asia", "Key Locations"],
+        ["24/7", "NOC Monitoring"],
+      ],
+    },
+    stories: {
+      eyebrow: "Customer Stories",
+      title: "Trusted by Businesses Across Indonesia",
+      pending: "Verified customer testimonials will be published here.",
+      pendingRole: "Testimonial pending verification",
+      imageSlot: "Image slot — Customer Stories photo",
+    },
+    cta: {
+      title: "Ready to Get Started?",
+      body: "Find the right internet solution for your business. Contact our team today for a consultation.",
+      quote: "Get a Quote",
+      sales: "Contact Sales",
+    },
+    faq: {
+      eyebrow: "FAQ",
+      title: "Frequently Asked Questions",
+      items: [
+        ["What is the installation process?", "Once you contact our team, we review your requirements and check network availability at your location. Our technical team then prepares the configuration, installs the connection on site and tests it before handover. The schedule is confirmed with you based on your location."],
+        ["Is there a minimum contract period?", "Contract terms depend on the selected package and your location. Our sales team will explain the applicable terms clearly in your quotation before you commit."],
+        ["Can I upgrade my bandwidth later?", "Yes. Our plans are scalable, so you can request a bandwidth upgrade as your business grows. Contact our team and we will advise on the options available for your location."],
+        ["Do you provide backup internet options?", "Yes. Artamedia offers Backup on Demand — a secondary connection that can be activated when your primary link experiences an issue, helping keep your operations online."],
+      ],
+    },
+  },
+  id: {
+    breadcrumb: ["Beranda", "Layanan", "Broadband Internet"],
+    hero: {
+      eyebrow: "Broadband Internet",
+      title1: "Internet Cepat & Andal",
+      title2: "untuk Bisnis Anda",
+      body: "Konektivitas broadband yang stabil dan berperforma tinggi agar bisnis, operasional, dan pelanggan Anda selalu terhubung.",
+      quote: "Minta Penawaran",
+      brochure: "Unduh Brosur",
+    },
+    highlights: [
+      ["Kecepatan Tinggi", "Performa internet yang stabil dan konsisten."],
+      ["Konektivitas Andal", "Downtime minimal untuk bisnis Anda."],
+      ["Akses Lokal & Global", "Akses lancar ke sumber daya lokal dan internasional."],
+      ["Dukungan 24/7", "Tim teknis kami selalu siap membantu Anda."],
+    ],
+    about: {
+      eyebrow: "Ikhtisar",
+      title: ["Solusi Internet", "untuk Setiap Bisnis"],
+      body: "Artamedia menyediakan layanan internet broadband berkualitas tinggi yang dirancang untuk mendukung operasional harian, meningkatkan produktivitas, dan memberikan pengalaman lebih baik bagi pelanggan Anda. Dengan infrastruktur yang tangguh dan dukungan profesional, kami memastikan bisnis Anda tetap terhubung — kapan saja, di mana saja.",
+      features: [
+        ["Jaringan Stabil", "Routing dan bandwidth yang optimal."],
+        ["Paket Skalabel", "Pilihan fleksibel sesuai pertumbuhan Anda."],
+        ["Akses Aman", "Konektivitas yang terlindungi dan andal."],
+      ],
+    },
+    packages: {
+      eyebrow: "Paket Kami",
+      title: "Paket Internet Bisnis",
+      body: "Pilih paket internet yang tepat untuk kebutuhan bisnis Anda.",
+      tabs: [
+        ["hospitality", "Hospitality"],
+        ["business", "Bisnis"],
+        ["custom", "Paket Khusus"],
+      ],
+      list: PACKAGES,
+      perMonth: "/ bulan",
+      monthly: "Harga Bulanan",
+      features: ["Dedicated Internet", "Stabil & Andal", "Dukungan 24/7"],
+      cta: "Minta Penawaran",
+      consult: {
+        business: {
+          title: "Paket bisnis yang disesuaikan dengan operasional Anda",
+          body: "Harga paket bisnis bergantung pada lokasi, bandwidth, dan kebutuhan layanan Anda. Hubungi tim sales kami untuk konsultasi dan penawaran yang disiapkan khusus untuk bisnis Anda.",
+        },
+        custom: {
+          title: "Rancang paket khusus bersama tim kami",
+          body: "Butuh bandwidth tertentu, banyak lokasi, atau konfigurasi khusus? Tim kami akan merancang paket sesuai kebutuhan Anda dan menyiapkan penawaran yang sesuai.",
+        },
+        cta: "Ajukan Konsultasi",
+      },
+    },
+    why: {
+      eyebrow: "Mengapa Artamedia",
+      title: "Lebih dari Sekadar Internet",
+      body: "Kami menghadirkan konektivitas andal dengan nilai tambah untuk bisnis Anda.",
+      items: [
+        ["Bandwidth Dedicated", "Kecepatan konsisten tanpa trafik bersama."],
+        ["Latensi Rendah", "Routing optimal untuk performa lebih baik."],
+        ["Pemantauan Proaktif", "Jaringan dipantau 24/7 oleh NOC kami."],
+        ["Dukungan di Lokasi", "Respons cepat dan tim teknis profesional."],
+      ],
+    },
+    industries: {
+      eyebrow: "Industri",
+      title: "Dirancang untuk Berbagai Industri",
+      body: "Layanan internet broadband kami mendukung berbagai sektor bisnis.",
+      cards: [
+        ["Hospitality", "Konektivitas andal dan cepat untuk meningkatkan pengalaman tamu dan mendukung operasional di seluruh properti Anda."],
+        ["Retail", "Internet stabil dan aman untuk POS, inventaris, dan konektivitas multi-cabang agar bisnis berjalan lancar."],
+        ["Perkantoran & Korporat", "Konektivitas berperforma tinggi untuk mendukung operasional harian, kolaborasi, dan pertumbuhan bisnis."],
+        ["Pendidikan", "Solusi internet andal untuk pembelajaran digital, konektivitas kampus, dan sistem administrasi."],
+        ["Kesehatan", "Konektivitas aman dan andal untuk sistem kritis, layanan pasien, dan operasional rumah sakit."],
+        ["Manufaktur", "Solusi jaringan tangguh untuk sistem produksi, konektivitas data, dan efisiensi operasional di seluruh fasilitas Anda."],
+      ],
+    },
+    coverage: {
+      eyebrow: "Cakupan Kami",
+      title: "Cakupan Jaringan Luas",
+      body: "Didukung infrastruktur fiber optik kami, Artamedia menghadirkan internet broadband yang andal di kota-kota besar Indonesia dan lokasi utama di Asia Tenggara.",
+      stats: [
+        ["Fiber Optik", "Infrastruktur"],
+        ["Kota Besar", "di Seluruh Indonesia"],
+        ["Asia Tenggara", "Lokasi Utama"],
+        ["24/7", "Pemantauan NOC"],
+      ],
+    },
+    stories: {
+      eyebrow: "Cerita Pelanggan",
+      title: "Dipercaya Bisnis di Seluruh Indonesia",
+      pending: "Testimoni pelanggan yang telah diverifikasi akan ditampilkan di sini.",
+      pendingRole: "Testimoni menunggu verifikasi",
+      imageSlot: "Slot gambar — foto Cerita Pelanggan",
+    },
+    cta: {
+      title: "Siap Memulai?",
+      body: "Temukan solusi internet yang tepat untuk bisnis Anda. Hubungi tim kami hari ini untuk konsultasi.",
+      quote: "Minta Penawaran",
+      sales: "Hubungi Sales",
+    },
+    faq: {
+      eyebrow: "FAQ",
+      title: "Pertanyaan yang Sering Diajukan",
+      items: [
+        ["Bagaimana proses instalasinya?", "Setelah Anda menghubungi tim kami, kami meninjau kebutuhan Anda dan memeriksa ketersediaan jaringan di lokasi Anda. Tim teknis kemudian menyiapkan konfigurasi, memasang koneksi di lokasi, dan mengujinya sebelum serah terima. Jadwal dikonfirmasi bersama Anda sesuai lokasi."],
+        ["Apakah ada periode kontrak minimum?", "Ketentuan kontrak bergantung pada paket yang dipilih dan lokasi Anda. Tim sales kami akan menjelaskan ketentuan yang berlaku secara jelas dalam penawaran sebelum Anda memutuskan."],
+        ["Bisakah saya menambah bandwidth nanti?", "Bisa. Paket kami skalabel, sehingga Anda dapat meminta peningkatan bandwidth seiring pertumbuhan bisnis. Hubungi tim kami untuk opsi yang tersedia di lokasi Anda."],
+        ["Apakah tersedia opsi internet cadangan?", "Ya. Artamedia menyediakan Backup on Demand — koneksi sekunder yang dapat diaktifkan saat link utama Anda mengalami gangguan, sehingga operasional tetap online."],
+      ],
+    },
+  },
+};
