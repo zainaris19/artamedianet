@@ -2,13 +2,13 @@ import { Reveal } from "../Reveal";
 import { useLang } from "../../context/LanguageContext";
 import { WRAP, BbEyebrow } from "../broadband/ui";
 import { DnImage } from "../dedicated/ui";
-import { ME_ASSETS, TOPOLOGY_SPRITE as S } from "./assets";
+import { ME_ASSETS, TOPOLOGY_SPRITE as S, INDUSTRY_SPRITE as IS } from "./assets";
 
-const spriteStyle = (x0) => ({
-  backgroundImage: `url(${ME_ASSETS.topology.src})`,
-  backgroundSize: `${(S.width / S.w) * 100}% auto`,
-  backgroundPosition: `${(x0 / (S.width - S.w)) * 100}% ${(S.y / (S.height - S.h)) * 100}%`,
-  aspectRatio: `${S.w} / ${S.h}`,
+const sprite = (src, sp, x0) => ({
+  backgroundImage: `url(${src})`,
+  backgroundSize: `${(sp.width / sp.w) * 100}% auto`,
+  backgroundPosition: `${(x0 / (sp.width - sp.w)) * 100}% ${(sp.y / (sp.height - sp.h)) * 100}%`,
+  aspectRatio: `${sp.w} / ${sp.h}`,
 });
 
 function Heading({ eyebrow, title, body }) {
@@ -25,7 +25,7 @@ export function MeTopology() {
   const { t } = useLang();
   const tp = t.metro.topology;
   return (
-    <section data-testid="me-topology" className="bg-white pb-16 lg:pb-20">
+    <section data-testid="me-topology" className="bg-white pt-16 lg:pt-20 pb-16 lg:pb-20">
       <div className={WRAP}>
         <Reveal>
           <Heading {...tp} />
@@ -34,7 +34,7 @@ export function MeTopology() {
           {tp.items.map(([title, body], i) => (
             <Reveal key={title} delay={i * 0.08}>
               <article data-testid={`me-topology-card-${i}`} className="h-full rounded-xl border border-slate-200/80 bg-[#F7FAFE] overflow-hidden transition-shadow duration-300 hover:shadow-[0_18px_40px_-24px_rgba(11,29,69,0.35)]">
-                <div role="img" aria-label={title} className="w-full bg-no-repeat" style={spriteStyle(S.x[i])} />
+                <div role="img" aria-label={title} className="w-full bg-no-repeat" style={sprite(ME_ASSETS.topology.src, S, S.x[i])} />
                 <div className="px-6 pb-6 pt-2">
                   <h3 className="text-[16px] font-bold text-bb-navy">{title}</h3>
                   <p className="mt-1.5 text-[13px] leading-relaxed text-bb-text">{body}</p>
@@ -61,7 +61,11 @@ export function MeIndustries() {
           {ind.items.map(([title, body], i) => (
             <Reveal key={title} delay={i * 0.05}>
               <article data-testid={`me-industry-card-${i}`} className="h-full rounded-lg border border-slate-200/80 bg-white overflow-hidden transition-transform duration-300 hover:-translate-y-1">
-                <DnImage asset={ME_ASSETS.industries[i]} className="aspect-[16/10] overflow-hidden !p-2" />
+                {ME_ASSETS.industriesSprite ? (
+                  <div role="img" aria-label={title} data-testid={`me-industry-img-${i}`} className="w-full bg-no-repeat" style={sprite(ME_ASSETS.industriesSprite, IS, IS.x[i])} />
+                ) : (
+                  <DnImage asset={ME_ASSETS.industries[i]} className="aspect-[16/10] overflow-hidden !p-2" />
+                )}
                 <div className="p-4">
                   <h3 className="text-[14.5px] font-bold text-bb-navy">{title}</h3>
                   <p className="mt-1 text-[12.5px] leading-relaxed text-bb-text">{body}</p>

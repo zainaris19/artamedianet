@@ -9,3 +9,4 @@ Backlog: brochure PDF, verified testimonial + photo, Business/Custom tab pricing
 Backlog: fill DN-MAP + DN-NOC when uploaded; Metro Ethernet, Dark Fiber, DWDM, Backup on Demand pages.
 - 2026-06: Dedicated page batch 2: DN-MAP (map.png) and DN-NOC (noc.png) filled; hero replaced with HD Artamedia tower (1175x682).
 - 2026-06: Added Metro Ethernet page (/services/metro-ethernet), Services dropdown entry, EN/ID in src/metroContent.js, asset map components/metro/assets.js. Filled: ME-HERO, ME-OVERVIEW, ME-DIAGRAM, ME-TOPOLOGY. Empty slots awaiting batch 2: ME-MAP, ME-IND-1..6, ME-WHY, ME-STORY, ME-CTA. Quote CTAs preset "Metro Ethernet".
+- 2026-06: Metro batch 2 filled ME-MAP, ME-IND-1..6 (sprite from industries.webp), ME-WHY (corridor), ME-CTA (skyline). ME-STORY still empty (no customer photo yet).

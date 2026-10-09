@@ -59,10 +59,11 @@ export function MeCoverage() {
           </div>
         </Reveal>
       </div>
-      <div data-testid="me-coverage-map" className="relative lg:absolute lg:inset-y-0 lg:right-0 lg:w-[55%] p-6 lg:p-8">
-        <DnImage asset={ME_ASSETS.map} dark className={`w-full h-[240px] sm:h-[320px] lg:h-full ${hasMap ? "" : "rounded-xl"}`} />
+      <div data-testid="me-coverage-map" className={`relative lg:absolute lg:inset-y-0 lg:right-0 lg:w-[58%] ${hasMap ? "" : "p-6 lg:p-8"}`}>
+        <DnImage asset={ME_ASSETS.map} dark className={`w-full h-[240px] sm:h-[320px] lg:h-full ${hasMap ? "" : "rounded-xl"}`} imgClass="object-[35%_center]" />
+        {hasMap && <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,#13284D_0%,rgba(19,40,77,0)_25%)] lg:bg-[linear-gradient(90deg,#13284D_0%,rgba(19,40,77,0.6)_18%,rgba(19,40,77,0)_42%)]" />}
         {hasMap && (
-          <div className="absolute bottom-6 right-8 flex gap-8 text-[12px] text-slate-300">
+          <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-8 flex gap-4 lg:gap-8 text-[11px] lg:text-[12px] text-slate-300">
             <span className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-bb-blue" />{c.legend[0]}</span>
             <span className="flex items-center gap-2"><span className="w-6 h-[2px] bg-bb-blue" />{c.legend[1]}</span>
           </div>

@@ -3,8 +3,9 @@ export const ME_ASSETS = {
   hero: { id: "ME-HERO", src: "/metro/hero.png", alt: "City skyline with an elevated highway at twilight", label: "Hero city skyline" },
   overview: { id: "ME-OVERVIEW", src: "/metro/overview.png", alt: "Modern office district with walkway at golden hour", label: "Office district" },
   diagram: { id: "ME-DIAGRAM", src: "/metro/diagram.webp", label: "Network diagram" },
-  map: { id: "ME-MAP", src: null, alt: "Metro Ethernet network map of Indonesia", label: "Indonesia network map" },
+  map: { id: "ME-MAP", src: "/metro/map.png", alt: "Metro Ethernet network map of Indonesia", label: "Indonesia network map" },
   topology: { id: "ME-TOPOLOGY", src: "/metro/topology.webp", label: "Topology diagrams" },
+  industriesSprite: "/metro/industries.webp",
   industries: [
     { id: "ME-IND-1", src: null, alt: "Enterprise", label: "Enterprise" },
     { id: "ME-IND-2", src: null, alt: "Data Center", label: "Data Center" },
@@ -13,10 +14,13 @@ export const ME_ASSETS = {
     { id: "ME-IND-5", src: null, alt: "Healthcare", label: "Healthcare" },
     { id: "ME-IND-6", src: null, alt: "Retail", label: "Retail" },
   ],
-  why: { id: "ME-WHY", src: null, alt: "Data center corridor", label: "Data center corridor" },
+  why: { id: "ME-WHY", src: "/metro/corridor.png", alt: "Data center corridor", label: "Data center corridor" },
   story: { id: "ME-STORY", src: null, alt: "Customer", label: "Customer photo" },
-  cta: { id: "ME-CTA", src: null, alt: "Panoramic city skyline", label: "Panoramic city skyline" },
+  cta: { id: "ME-CTA", src: "/metro/skyline.webp", alt: "Panoramic city skyline", label: "Panoramic city skyline" },
 };
 
 // Diagram regions inside the user's topology composite image (2000x667).
+// Photo regions inside the user's industry composite image (2000x667).
+export const INDUSTRY_SPRITE = { width: 2000, height: 667, w: 310, h: 220, y: 180, x: [17, 348, 679, 1011, 1342, 1678] };
+
 export const TOPOLOGY_SPRITE = { width: 2000, height: 667, w: 626, h: 314, y: 112, x: [26, 688, 1351] };
