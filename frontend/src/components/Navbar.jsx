@@ -5,6 +5,11 @@ import { ChevronDown, Menu, X, ArrowRight, Search } from "lucide-react";
 import Logo from "./Logo";
 import { useLang, useContact, scrollToSection, LangToggle } from "../context/LanguageContext";
 
+const PAGE_SERVICE = {
+  "/services/broadband-business": "Broadband Internet",
+  "/services/dedicated-network": "Dedicated Internet",
+};
+
 const DROPDOWN_TARGETS = {
   company: (t) => t.nav.companyMenu,
   services: (t) => t.nav.servicesMenu,
@@ -138,7 +143,7 @@ export default function Navbar() {
             </div>
             <button
               data-testid="header-contact-btn"
-              onClick={() => openContact(light ? "Broadband Internet" : undefined)}
+              onClick={() => openContact(PAGE_SERVICE[pathname])}
               className={
                 light
                   ? "hidden sm:inline-flex items-center gap-2 rounded-md bg-bb-blue hover:bg-[#0F55D6] text-white text-[13.5px] font-semibold pl-5 pr-4 py-2.5 transition-colors duration-300"
@@ -182,15 +187,17 @@ export default function Navbar() {
                 >
                   {t.nav[l.key]}
                 </motion.button>
-                {l.key === "services" && (
-                  <button
-                    data-testid="mobile-nav-link-broadband"
-                    onClick={() => go(t.nav.servicesMenu[1][1])}
-                    className="block w-full text-left font-display text-lg font-semibold text-slate-300 py-2.5 pl-4 border-b border-white/10 hover:text-brand-green2 transition-colors"
-                  >
-                    {t.nav.servicesMenu[1][0]}
-                  </button>
-                )}
+                {l.key === "services" &&
+                  t.nav.servicesMenu.slice(1).map(([label, path]) => (
+                    <button
+                      key={path}
+                      data-testid={`mobile-nav-link-${path.split("/").pop().split("-")[0]}`}
+                      onClick={() => go(path)}
+                      className="block w-full text-left font-display text-lg font-semibold text-slate-300 py-2.5 pl-4 border-b border-white/10 hover:text-brand-green2 transition-colors"
+                    >
+                      {label}
+                    </button>
+                  ))}
                 </div>
               ))}
             </div>

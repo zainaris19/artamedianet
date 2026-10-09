@@ -1,4 +1,5 @@
 import { BROADBAND } from "./broadbandContent";
+import { DEDICATED } from "./dedicatedContent";
 
 const u = (id, w = 1600) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
 const px = (id, w = 1200) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
@@ -35,6 +36,7 @@ export const INDUSTRY_IMAGES = [
 export const CONTENT = {
   en: {
     broadband: BROADBAND.en,
+    dedicated: DEDICATED.en,
     nav: {
       home: "Home",
       company: "Company",
@@ -48,6 +50,7 @@ export const CONTENT = {
       servicesMenu: [
         ["All Services", "#services"],
         ["Broadband Business", "/services/broadband-business"],
+        ["Dedicated Network", "/services/dedicated-network"],
       ],
       companyMenu: [
         ["About Us", "#about"],
@@ -243,6 +246,7 @@ export const CONTENT = {
 
   id: {
     broadband: BROADBAND.id,
+    dedicated: DEDICATED.id,
     nav: {
       home: "Beranda",
       company: "Perusahaan",
@@ -256,6 +260,7 @@ export const CONTENT = {
       servicesMenu: [
         ["Semua Layanan", "#services"],
         ["Broadband Bisnis", "/services/broadband-business"],
+        ["Dedicated Network", "/services/dedicated-network"],
       ],
       companyMenu: [
         ["Tentang Kami", "#about"],

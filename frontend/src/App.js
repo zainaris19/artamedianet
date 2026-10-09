@@ -17,6 +17,7 @@ import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
 import BroadbandBusiness from "@/pages/BroadbandBusiness";
+import DedicatedNetwork from "@/pages/DedicatedNetwork";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -101,6 +102,7 @@ function Shell() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/broadband-business" element={<BroadbandBusiness />} />
+        <Route path="/services/dedicated-network" element={<DedicatedNetwork />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
