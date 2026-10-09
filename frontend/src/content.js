@@ -1,6 +1,7 @@
 import { BROADBAND } from "./broadbandContent";
 import { DEDICATED } from "./dedicatedContent";
 import { METRO } from "./metroContent";
+import { DARK_FIBER } from "./darkFiberContent";
 
 const u = (id, w = 1600) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
 const px = (id, w = 1200) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
@@ -39,6 +40,7 @@ export const CONTENT = {
     broadband: BROADBAND.en,
     dedicated: DEDICATED.en,
     metro: METRO.en,
+    darkFiber: DARK_FIBER.en,
     nav: {
       home: "Home",
       company: "Company",
@@ -54,6 +56,7 @@ export const CONTENT = {
         ["Broadband Business", "/services/broadband-business"],
         ["Dedicated Network", "/services/dedicated-network"],
         ["Metro Ethernet", "/services/metro-ethernet"],
+        ["Dark Fiber", "/services/dark-fiber"],
       ],
       companyMenu: [
         ["About Us", "#about"],
@@ -251,6 +254,7 @@ export const CONTENT = {
     broadband: BROADBAND.id,
     dedicated: DEDICATED.id,
     metro: METRO.id,
+    darkFiber: DARK_FIBER.id,
     nav: {
       home: "Beranda",
       company: "Perusahaan",
@@ -266,6 +270,7 @@ export const CONTENT = {
         ["Broadband Bisnis", "/services/broadband-business"],
         ["Dedicated Network", "/services/dedicated-network"],
         ["Metro Ethernet", "/services/metro-ethernet"],
+        ["Dark Fiber", "/services/dark-fiber"],
       ],
       companyMenu: [
         ["Tentang Kami", "#about"],

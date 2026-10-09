@@ -9,6 +9,7 @@ const PAGE_SERVICE = {
   "/services/broadband-business": "Broadband Internet",
   "/services/dedicated-network": "Dedicated Internet",
   "/services/metro-ethernet": "Metro Ethernet",
+  "/services/dark-fiber": "Dark Fiber",
 };
 
 const DROPDOWN_TARGETS = {
