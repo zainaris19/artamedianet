@@ -18,6 +18,7 @@ import Footer from "@/components/Footer";
 import ContactModal from "@/components/ContactModal";
 import BroadbandBusiness from "@/pages/BroadbandBusiness";
 import DedicatedNetwork from "@/pages/DedicatedNetwork";
+import MetroEthernet from "@/pages/MetroEthernet";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -103,6 +104,7 @@ function Shell() {
         <Route path="/" element={<Home />} />
         <Route path="/services/broadband-business" element={<BroadbandBusiness />} />
         <Route path="/services/dedicated-network" element={<DedicatedNetwork />} />
+        <Route path="/services/metro-ethernet" element={<MetroEthernet />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

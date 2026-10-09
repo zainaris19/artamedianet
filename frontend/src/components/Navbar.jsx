@@ -8,6 +8,7 @@ import { useLang, useContact, scrollToSection, LangToggle } from "../context/Lan
 const PAGE_SERVICE = {
   "/services/broadband-business": "Broadband Internet",
   "/services/dedicated-network": "Dedicated Internet",
+  "/services/metro-ethernet": "Metro Ethernet",
 };
 
 const DROPDOWN_TARGETS = {

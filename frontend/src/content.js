@@ -1,5 +1,6 @@
 import { BROADBAND } from "./broadbandContent";
 import { DEDICATED } from "./dedicatedContent";
+import { METRO } from "./metroContent";
 
 const u = (id, w = 1600) => `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
 const px = (id, w = 1200) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
@@ -37,6 +38,7 @@ export const CONTENT = {
   en: {
     broadband: BROADBAND.en,
     dedicated: DEDICATED.en,
+    metro: METRO.en,
     nav: {
       home: "Home",
       company: "Company",
@@ -51,6 +53,7 @@ export const CONTENT = {
         ["All Services", "#services"],
         ["Broadband Business", "/services/broadband-business"],
         ["Dedicated Network", "/services/dedicated-network"],
+        ["Metro Ethernet", "/services/metro-ethernet"],
       ],
       companyMenu: [
         ["About Us", "#about"],
@@ -247,6 +250,7 @@ export const CONTENT = {
   id: {
     broadband: BROADBAND.id,
     dedicated: DEDICATED.id,
+    metro: METRO.id,
     nav: {
       home: "Beranda",
       company: "Perusahaan",
@@ -261,6 +265,7 @@ export const CONTENT = {
         ["Semua Layanan", "#services"],
         ["Broadband Bisnis", "/services/broadband-business"],
         ["Dedicated Network", "/services/dedicated-network"],
+        ["Metro Ethernet", "/services/metro-ethernet"],
       ],
       companyMenu: [
         ["Tentang Kami", "#about"],
