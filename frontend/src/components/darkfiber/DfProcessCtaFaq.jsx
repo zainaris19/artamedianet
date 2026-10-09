@@ -60,8 +60,8 @@ export function DfCta() {
     <section data-testid="df-cta" className="relative overflow-hidden bg-bb-navy">
       {bg.src ? (
         <>
-          <img src={bg.src} alt={bg.alt} className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,29,69,0.95)_0%,rgba(11,29,69,0.75)_40%,rgba(11,29,69,0.2)_100%)]" />
+          <img src={bg.src} alt={bg.alt} className="absolute inset-0 w-full h-full object-cover object-[75%_40%] lg:object-[center_40%]" />
+          <div className="absolute inset-0 bg-[#0B1D45]/80 lg:bg-transparent lg:bg-[linear-gradient(90deg,rgba(11,29,69,0.95)_0%,rgba(11,29,69,0.7)_38%,rgba(11,29,69,0.1)_70%,rgba(11,29,69,0)_100%)]" />
         </>
       ) : (
         <ImageSlot asset={bg} dark className="absolute inset-y-4 right-4 w-[42%] hidden lg:flex rounded-xl" />

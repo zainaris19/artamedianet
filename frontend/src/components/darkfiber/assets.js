@@ -3,10 +3,10 @@ export const DF_ASSETS = {
   hero: { id: "DF-HERO", src: "/darkfiber/hero.png", alt: "Artamedia field engineer beside a fiber cable drum", label: "Fiber cable drum & engineer" },
   about: { id: "DF-ABOUT", src: "/darkfiber/about.png", alt: "City skyline with expressway at sunset", label: "City skyline" },
   benefits: { id: "DF-BENEFITS", src: "/darkfiber/trench.png", alt: "Underground fiber duct installation", label: "Underground fiber installation" },
-  map: { id: "DF-MAP", src: null, alt: "Dark fiber network map of Indonesia", label: "Indonesia network map" },
+  map: { id: "DF-MAP", src: "/darkfiber/map.png", alt: "Dark fiber network map of Indonesia", label: "Indonesia network map" },
   useCasesSprite: "/darkfiber/usecases.webp",
-  specs: { id: "DF-PANEL", src: null, alt: "Fiber patch panel", label: "Fiber patch panel" },
-  cta: { id: "DF-CTA", src: null, alt: "Panoramic city skyline", label: "Panoramic city skyline" },
+  specs: { id: "DF-PANEL", src: "/darkfiber/panel.png", alt: "Fiber patch panel", label: "Fiber patch panel" },
+  cta: { id: "DF-CTA", src: "/darkfiber/cta.webp", alt: "Panoramic city skyline", label: "Panoramic city skyline" },
 };
 
 // Photo regions inside the user's use-case composite image (2000x668).
